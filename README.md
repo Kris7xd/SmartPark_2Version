@@ -1,4 +1,4 @@
-# SmartPark_2Version
+# SmartPark_2Version - Proyecto Android Studio (Jetpack Compose)
 
 Aplicación móvil desarrollada en Kotlin utilizando Jetpack Compose para la gestión de parqueaderos. 
 Este README describe la estructura del proyecto, los archivos importantes y algunas notas sobre su funcionamiento.

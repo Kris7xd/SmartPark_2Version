@@ -4,28 +4,46 @@ Aplicación móvil desarrollada en Kotlin utilizando Jetpack Compose para la ges
 Este README describe la estructura del proyecto, los archivos importantes y algunas notas sobre su funcionamiento.
 
 # SmartPark_2Version/
-│
-├─ app/
-│  ├─ manifests/                 # Contiene AndroidManifest.xml
-│  ├─ kotlin+java/
-│  │   └─ com.urbantechsolutions.smartpark_2version/
-│  │       ├─ ui/
-│  │       │   ├─ screens/       # Pantallas de la aplicación
-│  │       │   │   ├─ LoginScreen.kt
-│  │       │   │   ├─ RegisterScreen.kt
-│  │       │   │   ├─ ProfileScreen.kt
-│  │       │   │   ├─ MyReservationsScreen.kt
-│  │       │   │   ├─ ParkingMapScreen.kt
-│  │       │   │   └─ ReservationScreen.kt
-│  │       │   └─ theme/         # Temas y estilos de la app
-│  │       │       ├─ Color.kt
-│  │       │       ├─ Theme.kt
-│  │       │       └─ Type.kt
-│  │       └─ MainActivity.kt     # Actividad principal de Android
-│  │
-│  └─ res/                        # Recursos de la app (imágenes, layouts, strings, etc.)
-│
-└─ Gradle Scripts                 # Scripts de compilación y dependencias
+La aplicación SmartPark se organiza de la siguiente manera:
+
+Carpeta app/: Contiene todos los elementos principales de la aplicación.
+
+manifests/: Guarda el archivo AndroidManifest.xml, donde se definen los componentes y permisos de la app.
+
+kotlin+java/: Contiene el código fuente de la aplicación.
+
+com.urbantechsolutions.smartpark_2version/: Paquete principal de la app.
+
+ui/: Contiene todo lo relacionado con la interfaz de usuario.
+
+screens/: Aquí se encuentran las diferentes pantallas de la aplicación:
+
+LoginScreen.kt → Pantalla de inicio de sesión
+
+RegisterScreen.kt → Pantalla de registro de usuarios
+
+ProfileScreen.kt → Pantalla de perfil del usuario
+
+MyReservationsScreen.kt → Pantalla de reservas del usuario
+
+ParkingMapScreen.kt → Pantalla con el mapa de parqueaderos
+
+ReservationScreen.kt → Pantalla para realizar reservas
+
+theme/: Contiene la configuración visual y estilos de la app, incluyendo:
+
+Color.kt → Definición de colores
+
+Theme.kt → Tema general de la app
+
+Type.kt → Tipografía y estilos de texto
+
+MainActivity.kt → Actividad principal que se ejecuta al iniciar la app
+
+res/: Carpeta de recursos, como imágenes, layouts, strings, íconos, etc.
+
+Gradle Scripts/: Contiene los scripts necesarios para la compilación, dependencias y configuración del proyecto.
+
 
 # Archivos Importantes
 
@@ -72,3 +90,9 @@ Gestión de reservas desde la aplicación.
 # Notas
 Las variables email, password e isLoading están gestionadas con mutableStateOf para Jetpack Compose.
 La navegación entre pantallas se maneja mediante callbacks (onNavigateToRegister, onLoginSuccess, onBack).
+
+## Cómo probar
+1. Descargar el archivo `SmartPark.apk` desde:
+   [GitHub](https://github.com/Kris7xd/SmartPark_2VersionAPK.git)
+2. Instalarlo en un dispositivo Android o emulador.
+3. Abrir la app y navegar entre las pantallas.
